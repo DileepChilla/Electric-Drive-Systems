@@ -16,7 +16,7 @@ A complete control system for the **MY1016 24V 250W brushed DC motor**, designed
 
 ### Block Diagram
 
-![Block Diagram](images/ELT10140_Team1_BlockDiagram_v2_CORRECTED.png)
+![Block Diagram](images/ELT10140_Team1_BlockDiagram.png)
 
 ### Repository Structure
 
@@ -54,4 +54,4 @@ A complete control system for the **MY1016 24V 250W brushed DC motor**, designed
 
 ---
 
-*Team 1 — Budget target: ~€69 of €400 allocation*
+*Team 1 — ELT10140 Electric Drive Systems*
