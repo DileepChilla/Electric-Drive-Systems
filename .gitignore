@@ -1,0 +1,7 @@
+.pio/
+.vscode/
+*.hex
+*.elf
+*.o
+__pycache__/
+node_modules/

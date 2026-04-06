@@ -1,0 +1,166 @@
+**ELT10140 – Electric Drive Systems**
+
+Practical Course: Control & Assembly of a Power DC Motor
+
+**Team 1 – Milestone Deliverables Tracker**
+
+WHZ – Westsächsische Hochschule Zwickau  |  SS 2026
+
+# Milestone deliverables by date
+
+This table lists exactly what you must have completed and ready to show at each milestone date. Bold items are critical deliverables. Your presentation slot is 11:30 – 11:50.
+
+| **Date** | **Milestone** | **What you must have ready** | **Status** |
+| --- | --- | --- | --- |
+| **26.03.2026** | **Kick-Off Meeting** | Understand the project scope and requirements Form team roles (HW specialist, SW specialist, team leader, documentation, presentation) Read all provided documents thoroughly Set up communication channel (WhatsApp / Teams group) | **DONE** |
+| **02.04.2026** | **Concept ****&**** Block Diagram** | **Complete system block diagram with ALL interfaces defined** Signal types between blocks: PWM, analog feedback, gate drive, power Voltage levels at each interface: 3.3V, 5V, 12V, 24V Current requirements for each block calculated **Wooden board / mounting plate dimensions specified** Initial component research started (not final selection yet) | **NEXT** |
+| **16.04.2026** | **Presentation 1** | **Present 2 work packages (recommended: Control Board + Power Supply)** MCU selected with justification (e.g., Arduino Nano / STM32) Power supply specs defined (lab supply or battery option) Voltage regulator circuit designed (24V to 5V/3.3V) Pin assignment table for MCU (PWM out, ADC in, GPIO for buttons/LEDs) Software architecture overview (main loop, ISR for PWM, ADC reading) | **TODO** |
+| **30.04.2026** | **Presentation 2** | **Present 2 work packages (recommended: Driver Electronics + DC Motor)** Gate driver IC selected (e.g., IR2104 / IR2110) with datasheet references Bootstrap circuit designed (if using high-side driver) DC motor selected and ordered (24V, 250W, brushed, under 100€) Motor datasheet parameters extracted: rated current, stall current, no-load speed Driver electronics schematic (first draft) | **TODO** |
+| **07.05.2026** | **Presentation 3** | **Present Power Electronics work package** MOSFET selected (e.g., IRFZ44N) with thermal calculations Current sensing circuit designed (shunt resistor + op-amp) Flyback diode selected for motor inductive protection **Power electronics schematic completed** **Connection materials fully specified:**   – Connectors: types, current ratings, polarity   – Cables: cross-sections (1.5mm² power, 0.25mm² signal), colors, lengths   – Screw terminals: pitch, current rating, number of poles   – Push buttons and main switch specified   – Indicator LEDs (if implementing optional features) **All 5 work packages now presented** | **TODO** |
+| **21.05.2026** | **Final BOM** | **Complete Bill of Materials with:**   – Component name and precise type designation   – Quantity needed   – Supplier / source URL   – Unit price and total price   – Delivery time (must be ≤ 1 week)   – Work package assignment **Total cost calculated – target: well under 400€** **All components ordered by this date!** | **TODO** |
+| **28.05.2026** | **PCB Layout ****&**** Software** | **PCB layout completed in KiCad (or Altium)**   – Schematic finalized and reviewed   – Footprints placed, traces routed   – Power traces sized for current (min 2mm for 10A+)   – Gerber files generated (if ordering PCB) **Software functionally complete:**   – PWM generation at ~20 kHz   – Button input handling (on/off, speed up, speed down)   – ADC reading for current sensing   – Overcurrent protection logic (mandatory)   – Motor-locked detection (mandatory)   – LED status output (if implementing) | **TODO** |
+| **04.06.2026** | **Draft Report** | **Complete draft documentation including:**   – System block diagram (refined final version)   – Circuit diagrams for all work packages   – Bill of Materials (final)   – Functional descriptions for each subsystem   – Datasheet for the complete assembly   – Test results from commissioning **Hardware assembly should be complete or near-complete** Initial testing and debugging in progress | **TODO** |
+| **11.06.2026** | **Final Report** | **Polished, error-free, professional documentation** All sections complete and reviewed by team Circuit diagrams clean and clearly labeled Functional descriptions precise and accurate Product datasheet for the complete assembly Cost summary showing total expenditure vs. budget | **TODO** |
+| **25.06.2026** | **Final Presentation** | **Team 1 slot: 11:30 – 11:50 (20 minutes!)** **Working prototype demonstrated live** Presentation slides covering:   – System overview and design decisions   – Key challenges and solutions   – Cost breakdown (this wins marks!)   – Live demo: motor on/off, speed control, protection triggers Every team member presents their work package | **TODO** |
+
+# Cost-optimized budget strategy
+
+The team with the lowest cost wins extra marks. Here is a realistic strategy to come in at approximately €75 – saving over 80% of the €400 budget.
+
+| **Work Package** | **Make or Buy** | **Budget** | **Target** | **Cost-saving tip** |
+| --- | --- | --- | --- | --- |
+| **Control Board** | HW buy / SW develop | < 100 € | **~15 €** | Arduino Nano clone (~5€) + buttons + LM2596 buck module |
+| **Driver Electronics** | Buy or develop | < 100 € | **~5 €** | IR2104 gate driver IC (~2€) + bootstrap caps + resistors |
+| **Power Electronics** | Develop | < 100 € | **~10 €** | IRFZ44N MOSFET (~1€) + shunt resistor + flyback diode + heatsink |
+| **DC Motor** | Buy | < 100 € | **~30 €** | Search Amazon.de / eBay.de for MY1016 or similar 24V 250W |
+| **Power Supply** | Given / option buy | < 200 € | **0 €** | Use lab power supply (free!) – battery only if prof requires it |
+| **Connectors ****&**** cables** | Buy | (included) | **~15 €** | Screw terminals, XT60, cables, wooden board, standoffs |
+| **TOTAL** |  | **400 €** | **~75 €** | **Savings of ~325€ vs budget – this impresses the professor!** |
+
+# Team role assignments
+
+Each team member should take one of these roles. Fill in names as your team decides.
+
+| **Role** | **Responsibilities** | **Name** |
+| --- | --- | --- |
+| **Team Leader** | Coordinates tasks, tracks milestones, communicates with professor | ________________ |
+| **Hardware Specialist** | Circuit design, PCB layout, component selection, soldering | ________________ |
+| **Software Specialist** | MCU programming, PWM control, protection logic, debugging | ________________ |
+| **Documentation Specialist** | Report writing, circuit diagrams, BOM, datasheet creation | ________________ |
+| **Presentation Specialist** | Slide design, demo preparation, rehearsal coordination | ________________ |
+
+# Week-by-week action checklist
+
+## Week 1: 26.03 – 01.04 (Block diagram week)
+
+- Draw complete system block diagram with all 5 work packages
+
+- Define every interface: signal type, voltage level, current
+
+- Decide on MCU platform (Arduino Nano recommended for cost)
+
+- Research motor options on Amazon.de / eBay.de (24V, 250W, brushed)
+
+- Specify wooden board dimensions (suggested: 40×30 cm)
+
+- Assign work packages to team members
+
+## Week 2: 02.04 – 08.04 (Present block diagram + prep for Pres. 1)
+
+- Submit block diagram to professor on 02.04
+
+- Select MCU and voltage regulator – finalize Control Board design
+
+- Define power supply requirements (voltage, current capacity)
+
+- Begin schematic for Control Board in KiCad
+
+- Prepare presentation slides for 2 work packages
+
+## Week 3: 09.04 – 15.04 (Holiday week – use for prep!)
+
+- Finalize Control Board + Power Supply schematics
+
+- Rehearse Presentation 1 (16.04)
+
+- Begin researching gate driver ICs for Driver Electronics
+
+- Order motor if a good option is found (delivery ≤ 1 week)
+
+## Week 4: 16.04 – 22.04 (Presentation 1 + Driver Electronics)
+
+- Deliver Presentation 1 on 16.04 (Control Board + Power Supply)
+
+- Design Driver Electronics circuit (gate driver + bootstrap)
+
+- Select and order DC motor if not already done
+
+- Begin software development: PWM generation, button handling
+
+## Week 5: 23.04 – 29.04 (Prep for Presentation 2)
+
+- Finalize Driver Electronics schematic
+
+- Document motor specifications from datasheet
+
+- Prepare Presentation 2 slides (Driver Electronics + DC Motor)
+
+- Continue software: ADC for current sensing, overcurrent logic
+
+## Week 6: 30.04 – 06.05 (Presentation 2 + Power Electronics)
+
+- Deliver Presentation 2 on 30.04 (Driver Electronics + DC Motor)
+
+- Design Power Electronics circuit (MOSFET + current sensor + flyback diode)
+
+- Thermal calculations for MOSFET (heatsink sizing)
+
+- Specify all connection materials (connectors, cables, terminals)
+
+- Prepare Presentation 3 slides
+
+## Week 7: 07.05 – 20.05 (Presentation 3 + BOM finalization)
+
+- Deliver Presentation 3 on 07.05 (Power Electronics + connections)
+
+- All 5 work packages now presented – integrate feedback
+
+- Compile complete BOM with prices and delivery sources
+
+- Verify all delivery times ≤ 1 week
+
+- Submit final BOM by 21.05
+
+- Place all remaining orders immediately after BOM approval
+
+## Weeks 8–9: 21.05 – 03.06 (PCB + Software + Assembly)
+
+- Complete PCB layout in KiCad by 28.05
+
+- Complete software with all mandatory features by 28.05
+
+- Order PCBs (or build on perfboard for faster turnaround)
+
+- Begin hardware assembly on wooden board
+
+- Test individual subsystems before integration
+
+- Integration testing: MCU → Driver → MOSFET → Motor
+
+- Prepare draft report by 04.06
+
+## Weeks 10–12: 04.06 – 25.06 (Report + Final Presentation)
+
+- Submit draft report on 04.06 – incorporate professor feedback
+
+- Submit final report on 11.06
+
+- Debug and polish the prototype
+
+- Prepare final presentation slides
+
+- Rehearse live demo: motor on/off, speed up/down, overcurrent trip
+
+- Final Presentation on 25.06 at 11:30 – 11:50
+
+*Remember: The professor values cost efficiency, documentation quality, and a working demo. Aim for ~€75 total spend, clean schematics, and a reliable prototype that doesn’t fail during the live demo.*
