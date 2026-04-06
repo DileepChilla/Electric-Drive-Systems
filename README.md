@@ -2,7 +2,7 @@
 
 ## 24V 250W Brushed DC Motor Driver — Team 1
 
-A complete control system for the **MY1016 24V 250W brushed DC motor**, designed and built as part of the ELT10140 practical course at Westsächsische Hochschule Zwickau, supervised by Prof. Dr.-Ing. Zitzelsberger.
+A complete control system for the **MY1016 24V 250W brushed DC motor**, designed and built as part of the ELT10140 practical course at Westsächsische Hochschule Zwickau.
 
 ### System Overview
 
@@ -25,8 +25,7 @@ A complete control system for the **MY1016 24V 250W brushed DC motor**, designed
 │   ├── Complete_24V_250W_Brushed_DC_Motor_Driver_Design_*.md
 │   ├── ATmega328P_Motor_Control_*.md
 │   └── Proteus_BUTTON_*.md
-├── docs/            # Course documents, milestone tracker, project requirements
-│   ├── ELT10140_Team1_Milestone_Tracker.docx
+├── docs/            # Course documents, project requirements
 │   ├── Practical_Course_ELT10140___Project_Requirements*.pdf
 │   ├── Practical_Course_ELT10140___Project_Hints.pdf
 │   └── la_whz_*.pdf
@@ -50,7 +49,7 @@ A complete control system for the **MY1016 24V 250W brushed DC motor**, designed
 
 - **Course:** ELT10140 – Electric Drive Systems, SoSe 2026
 - **University:** Westsächsische Hochschule Zwickau (WHZ)
-- **Supervisor:** Prof. Dr.-Ing. Zitzelsberger
+- **Supervisors:** Prof. Dr.-Ing. Zitzelsberger, Prof. U. David, Prof. R. Lehmann
 
 ---
 
