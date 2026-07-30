@@ -1,0 +1,31 @@
+Drill report for Gruppe1-Index3.kicad_pcb
+Created on 2026-06-12T15:25:56
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Gruppe1-Index3-PTH-drl.gbr' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (10 holes))
+    T2  0.500mm  0.0197"  (10 holes))
+    T3  0.800mm  0.0315"  (57 holes))
+    T4  0.800mm  0.0315"  (16 holes))
+    T5  1.000mm  0.0394"  (52 holes))
+    T6  1.100mm  0.0433"  (3 holes))
+    T7  1.200mm  0.0472"  (2 holes))
+    T8  1.300mm  0.0512"  (8 holes))
+    T9  1.500mm  0.0591"  (2 holes))
+    T10  3.200mm  0.1260"  (4 holes))
+
+    Total plated holes count 164
+
+
+Drill file 'Gruppe1-Index3-NPTH-drl.gbr' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
